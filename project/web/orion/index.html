@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>오리온 - ORION</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="즐거움과 행복이 가득한 오리온 그룹">
+    <meta name="keywords" content="오리온 소개, 오리온 사업영역, 오리온 채용, 초코파이, 닥터유, 제주용암수, 마켓오">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--스크립트 연결-->
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="script/slick-1.8.1/slick-1.8.1/slick/slick.css" type="text/css">
+    <script src="script/script.js"></script>
+    <!--글꼴연결-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Nanum+Gothic|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--글꼴
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Baloo Da 2', cursive;-->
+    <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link rel="stylesheet" href="style/responsive.css" type="text/css">
+    <!--글꼴 내부 스타일로 연결-->
+    <style type="text/css">
+        @font-face {
+            src: url(fonts/lotte_dream.woff);
+            font-family: dream;
+        }
+
+        @font-face {
+            src: url(fonts/lotte_happy.woff);
+            font-family: happy;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="index">
+        <button>
+            <p>ONLY ORION</p><span></span>
+        </button>
+        <button>
+            <p>
+                <!--BUSINESS-->
+            </p><span></span>
+        </button>
+        <button>
+            <p>
+                <!--PRODUCT-->
+            </p><span></span>
+        </button>
+        <button>
+            <p>
+                <!--PR ROOM-->
+            </p><span></span>
+        </button>
+        <button>
+            <p>
+                <!--RECRUIT-->
+            </p><span></span>
+        </button>
+    </div>
+    <div id="site_map">
+        <div class="map">
+            <ul>
+                <li class="navName">회사소개</li>
+                <li><a href="#">오리온 소개</a></li>
+                <li><a href="#">오리온 역사관</a></li>
+                <li><a href="#">IR 정보</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+            <ul>
+                <li class="navName">사업영역</li>
+                <li><a href="#">엔터테이먼트 사업</a></li>
+                <li><a href="#">글로벌 사업</a></li>
+            </ul>
+            <ul>
+                <li class="navName">제품소개</li>
+                <li><a href="#">초코파이하우스</a></li>
+                <li><a href="#">마켓·오</a></li>
+                <li><a href="#">닥터유</a></li>
+                <li><a href="#">제주용암수</a></li>
+            </ul>
+            <ul>
+                <li class="navName">오리온 소식</li>
+                <li><a href="#">신제품/리뉴얼 상품</a></li>
+                <li><a href="#">오리온 CF</a></li>
+                <li><a href="#">PR 정보</a></li>
+                <li><a href="#">채용공고</a></li>
+            </ul>
+            <ul>
+                <li class="navName">고객사항</li>
+                <li><a href="#">고객의 소리(VOC)</a></li>
+                <li><a href="#">불만 접수</a></li>
+                <li><a href="#">의견 접수</a></li>
+                <li><a href="#">자주 묻는 질</a></li>
+                <li><a href="#">영업소 위치</a></li>
+            </ul>
+            <p><img src="images/close.png" alt="사이트맵닫기"></p>
+        </div>
+    </div>
+    <div id="h_wrap">
+        <header>
+            <button id="m_nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="mobile_nav_wrap">
+                <div class="mobile_nav">
+                    <button>회사소개</button>
+                    <div class="mobile_sub sub1">
+                        <a href="#">오리온 소개</a>
+                        <a href="#">오리온 역사관</a>
+                        <a href="#">IR 정보</a>
+                        <a href="#">오시는 길</a>
+                    </div>
+                </div>
+                <div class="mobile_nav">
+                    <button>사업영역</button>
+                    <div class="mobile_sub sub2">
+                        <a href="#">엔터테이먼트 사업</a>
+                        <a href="#">글로벌 사업</a>
+                    </div>
+                </div>
+                <div class="mobile_nav">
+                    <button>제품소개</button>
+                    <div class="mobile_sub sub3">
+                            <a href="#">초코파이하우스</a>
+                            <a href="#">마켓·오</a>
+                            <a href="#">닥터유</a>
+                            <a href="#">제주용암수</a>
+                    </div>
+                </div>
+                <div class="mobile_nav">
+                    <button>오리온 소식</button>
+                    <div class="mobile_sub sub4">
+                        <a href="#">신제품/리뉴얼 상품</a>
+                        <a href="#">오리온 CF</a>
+                        <a href="#">PR 정보</a>
+                        <a href="#">채용공고</a>
+                    </div>
+                </div>
+                <div class="mobile_nav">
+                    <button>고객사항</button>
+                    <div class="mobile_sub sub5">
+                        <a href="#">고객의 소리(VOC)</a>
+                        <a href="#">불만 접수</a>
+                        <a href="#">의견 접수</a>
+                        <a href="#">자주 묻는 질</a>
+                        <a href="#">영업소 위치</a>
+                    </div>
+                </div>
+            </div>
+            <h1><a href="#"><img src="images/logo.png" alt="오리온그룹"></a></h1>
+            <nav>
+                <ul class="main_nav">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">오리온 소식</a></li>
+                    <li><a href="#">고객사항</a></li>
+                </ul>
+                <div class="sub_nav_wrap">
+                    <div class="sub_nav">
+                        <ul class="sub">
+                            <li><a href="#">오리온 소개</a></li>
+                            <li><a href="#">오리온 역사관</a></li>
+                            <li><a href="#">IR 정보</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                        <ul class="sub">
+                            <li><a href="#">엔터테이먼트 사업</a></li>
+                            <li><a href="#">글로벌 사업</a></li>
+                        </ul>
+                        <ul class="sub">
+                            <li><a href="#">초코파이하우스</a></li>
+                            <li><a href="#">마켓·오</a></li>
+                            <li><a href="#">닥터유</a></li>
+                            <li><a href="#">제주용암수</a></li>
+                        </ul>
+                        <ul class="sub">
+                            <li><a href="#">신제품/리뉴얼 상품</a></li>
+                            <li><a href="#">오리온 CF</a></li>
+                            <li><a href="#">PR 정보</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul>
+                        <ul class="sub">
+                            <li><a href="#">고객의 소리(VOC)</a></li>
+                            <li><a href="#">불만 접수</a></li>
+                            <li><a href="#">의견 접수</a></li>
+                            <li><a href="#">자주 묻는 질</a></li>
+                            <li><a href="#">영업소 위치</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="h_right">
+                <div class="lang">
+                    <a href="#" class="kor">KOR</a>
+                    <a href="#" class="eng">ENG</a>
+                </div>
+                <button class="sitemap_icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+    </div>
+    <div id="main_wrap">
+        <div class="main_img">
+            <img src="images/main_img.png" alt>
+            <img src="images/main_img2.png" alt>
+            <img src="images/main_img3.png" alt>
+        </div>
+        <section>
+            <div class="main_txt">
+                <p>ONLY ORION</p>
+                <p><em>즐거움</em>과</p>
+                <p><em>행복</em>이 가득한</p>
+                <p><span>오리온</span>★★★</p>
+            </div>
+            <div class="scroll">
+                <p>scroll<span>
+                        <!--화살표넣기--></span></p>
+            </div>
+        </section>
+    </div>
+    <div id="busi_wrap">
+        <section>
+            <h2>BUSINESS</h2>
+            <p>오리온의 즐거움 꿈은 계속 됩니다</p>
+            <div class="busi_contents entertain">
+                <div class="busi_img_wrap">
+                    <img src="images/busi_img1.png" alt>
+                    <img src="images/busi_img3.png" alt>
+                </div>
+                <div class="txt">
+                    <!-- txt에 검은 바탕투명주고 포지션-->
+                    <h3>ENTERTAINMENT</h3>
+                    <p><span>엔터테이먼트 사업</span><br>
+                        오리온이 만들면 문화가 된다!<br>
+                        오리온은 영화, 스포츠 등 다양한 분야에서 고객에게
+                        즐거움을 선사하고 있습니다.</p>
+                    <a href="#" class="more">
+                        more
+                        <span>
+                            <!--화살표--></span>
+                    </a>
+                </div>
+            </div>
+            <div class="busi_contents global">
+                <!--각 div에 배경이미지 넣기-->
+                <div class="txt">
+                    <h3>GLOBAL BUSINESS</h3>
+                    <p><span>글로벌 사업</span><br>
+                        세계에서 인정 받는 대한민국 대표기업 오리온의 저력!<br>세계 일류 브랜드가 될 때까지 글로벌 비즈니스는 멈추지 않습니다.</p>
+                    <a href="#" class="more">
+                        more
+                        <span>
+                            <!--화살표--></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="product_wrap">
+        <section>
+            <h2>PRODUCT</h2>
+            <p>오리온은 맛과 건강을 생각합니다</p>
+            <div class="pro_contents">
+                <div class="product drYou">
+                    <div class="left">
+                        <h3>DR.You</h3>
+                        <p class="detail">닥터유 프로젝트<br>
+                            <span>Better For Your Healthy Life</span>
+                        </p>
+                        <p class="more">READ MORE<span></span></p>
+                    </div>
+                    <span>
+                        <!--가운데 긴 선 포지션--></span>
+                    <p class="right">
+                        <!--제품 배경이미지-->
+                    </p>
+                </div>
+                <div class="product choco">
+                    <div class="left">
+                        <h3>CHOCOPIE</h3>
+                        <p class="detail">초코파이<br>
+                            <span>서로간의 情이 새록새록 솟아나는 초코파이!</span>
+                        </p>
+                        <p class="more">READ MORE<span></span></p>
+                    </div>
+                    <span>
+                        <!--가운데 긴 선 포지션--></span>
+                    <p class="right">
+                        <!--제품 배경이미지-->
+                    </p>
+                </div>
+                <div class="product jeju">
+                    <div class="left">
+                        <h3>JEJUYONGAMSOO</h3>
+                        <p class="detail">제주용암수<br>
+                            <span>내 몸에 맞춘 프리미엄 미네랄 워터</span>
+                        </p>
+                        <p class="more">READ MORE<span></span></p>
+                    </div>
+                    <span>
+                        <!--가운데 긴 선 포지션--></span>
+                    <p class="right">
+                        <!--제품 배경이미지-->
+                    </p>
+                </div>
+                <div class="product marketO">
+                    <div class="left">
+                        <h3>marketO</h3>
+                        <p class="detail">마켓·오<br>
+                            <span>원물 그대로 담은 자연한끼!</span>
+                        </p>
+                        <p class="more">READ MORE<span></span></p>
+                    </div>
+                    <span>
+                        <!--가운데 긴 선 포지션--></span>
+                    <p class="right">
+                        <!--제품 배경이미지-->
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="pr_wrap">
+        <section>
+            <h2>PR ROOM</h2>
+            <p>고객의 관심과 사랑으로 성장해온 오리온입니다</p>
+            <div class="pr_left">
+                <h3>ORION NEWS</h3>
+                <span>
+                    <!--제목밑선--></span>
+                <div class="pr_contents">
+                    <a href="#">
+                        <img src="images/pr_news_img.png" alt>
+                        <h4>오리온 '예감' 볶은양파맛 출시</h4>
+                        <p>2020-03-21</p>
+                    </a>
+                    <a href="#">
+                        <img src="images/pr_news_img2.png" alt>
+                        <h4>오리온, 환경 친화적 포장재 생산 개시</h4>
+                        <p>2020-03-19</p>
+                    </a>
+                    <a href="#">
+                        <img src="images/pr_news_img3.png" alt>
+                        <h4>오리온 제주용암수, 330ml 소용량 제품 출시</h4>
+                        <p>2020-03-23</p>
+                    </a>
+                </div>
+            </div>
+            <p class="cf">
+                <video controls loop autoplay muted>
+                    <source src="video/chickenpop.mp4">
+                </video>
+            </p>
+            <div class="right">
+                <div class="back">
+                    <div class="pr_right society">
+                        <!--빨간 배경색, 글씨이미지 넣기-->
+                        <a href="#" class="go_link">사회 공헌 바로가기</a>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="pr_right potal">
+                        <p>공정거래위원회 4대 실천사항 도입과 <br>
+                            협력회사 상생협력 지원계획을<br>
+                            실천합니다.</p>
+                        <!--빨간 배경색 넣기-->
+                        <a href="#" class="go_link">상생협력포털 바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="recruit_wrap">
+        <!--배경이미지넣기-->
+        <section>
+            <div class="recruit">
+                <p><em>오리온</em>과 즐거움을 함께 할 유능한 <em>인재</em>를 기다립니다.</p>
+                <a href="#">
+                    자세히 보기
+                    <img src="images/recruit_arrow.png" alt>
+                    <!--배경동그라미 넣기-->
+                </a>
+            </div>
+        </section>
+    </div>
+    <div id="ft_wrap">
+        <!--배경색넣기-->
+        <div class="f_top">
+            <!--밑선넣기-->
+            <footer>
+                <div class="f_left">
+                    <a href="#">법적고지</a>
+                    <a href="#">개인정보취급방침</a>
+                    <a href="#">이메일주소수집거부</a>
+                </div>
+                <div class="f_right">
+                    <div class="site">
+                        <button>관련사이트<span>▼</span></button>
+                        <ul>
+                            <li><a href="#">오리온 인재채용</a></li>
+                            <li><a href="#">초코파이 하우스</a></li>
+                            <li><a href="#">제주용암수</a></li>
+                            <li><a href="#">마켓·오</a></li>
+                            <li><a href="#">Dr.You</a></li>
+                        </ul>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img src="images/sns1.png" alt="페이스북"></a>
+                        <a href="#"><img src="images/sns2.png" alt="인스타그램"></a>
+                        <a href="#"><img src="images/sns3.png" alt="유튜브"></a>
+                        <a href="#"><img src="images/sns4.png" alt="블로그포스트"></a>
+                        <a href="#"><img src="images/sns5.png" alt="카카오톡"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="f_btm">
+            <footer>
+                <div class="company">
+                    <p>서울시 용산구 백범로 90다길 13</p>
+                    <p> 02-710-6000 · 고객상담 080-023-5700 (수신자 부담) · 제품 구입 문의 : 02-710-6083</p>
+                    <p>ORIONMASTER@ORIONWORLD.COM</p>
+                </div>
+                <img src="images/ft_img.png" alt="한국정보보호산업협회">
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

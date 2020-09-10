@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>엠브레인 패널파워</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link href="styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="styles/main.css" type="text/css" rel="stylesheet">
+    <link href="styles/responsive.css" type="text/css" rel="stylesheet">
+    <link href="script/slick-1.8.1/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <!--script-->
+    <script type="text/javascript" src="script/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <!--로그인 팝업창-->
+    <!--모바일 내비-->
+    <div id="mobile_nav_wrap">
+        <div class="mobile_nav">
+            <li>패널안내
+            <div class="mobile_sub sub1">
+                <a href="#">가입 및 혜택안내</a>
+                <a href="#">조사 안내</a>
+                <a href="#">적립금 안내</a>
+                <a href="#">1% Donation</a>
+            </div>
+            </li>
+        </div>
+        <div class="mobile_nav">
+            <li>조사참여
+            <div class="mobile_sub sub2">
+                <a href="#">조사참여하기</a>
+                <a href="#">좌담회 참여하기</a>
+            </div>
+            </li>
+        </div>
+        <div class="mobile_nav">
+            <li>이벤트
+            <div class="mobile_sub sub3">
+                <a href="#">진행중인 이벤트</a>
+                <a href="#">당첨자 확인</a>
+                <a href="#"></a>
+            </div>
+            </li>
+        </div>
+        <div class="mobile_nav">
+            <li>마이페이지
+            <div class="mobile_sub sub4">
+                <a href="#">내 정보 관리</a>
+                <a href="#">적립금 관리</a>
+                <a href="#">조사 관리</a>
+                <a href="#">내 1:1 문의</a>
+                <a href="#">패널 탈퇴</a>
+            </div>
+            </li>
+        </div>
+        <div class="mobile_nav">
+            <li>고객참여
+            <div class="mobile_sub sub5">
+                <a href="#">공지사항</a>
+                <a href="#">자주 묻는 질문</a>
+                <a href="#">1:1 문의하기</a>
+            </div>
+            </li>
+        </div>
+    </div>
+    <header>
+        <div class="h_top">
+            <div class="ht_left">
+                <h1><a href="#"><img src="images/h_logo.gif" alt="엠브레인 패널파워 로고"></a></h1>
+                <div class="login">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#"><span>가입혜택</span></a>
+                </div>
+            </div>
+            <div class="ht_right">
+                <a href="#">재미있는조사세상</a>
+                <a href="#">모바일웹</a>
+            </div>
+            <a href="#" class="all_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a href="#" class="person">
+            </a>
+        </div>
+    </header>
+    <div id="h_btm_wrap">
+        <div class="h_btm">
+            <nav>
+                <ul class="main_nav">
+                    <li><a href="#">패널안내</a></li>
+                    <li><a href="#">조사참여</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <div class="sub_nav_wrap">
+                    <div class="sub">
+                        <ul class="sub_nav">
+                            <li><a href="#">가입 및 혜택안내</a></li>
+                            <li><a href="#">조사 안내</a></li>
+                            <li><a href="#">적립금 안내</a></li>
+                            <li><a href="#">1% Donation</a></li>
+                        </ul>
+                        <ul class="sub_nav">
+                            <li><a href="#">조사참여하기</a></li>
+                            <li><a href="#">좌담회 참여하기</a></li>
+                        </ul>
+                        <ul class="sub_nav">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">당첨자 확인</a></li>
+                        </ul>
+                        <ul class="sub_nav">
+                            <li><a href="#">내 정보 관리</a></li>
+                            <li><a href="#">적립금 관리</a></li>
+                            <li><a href="#">조사 관리</a></li>
+                            <li><a href="#">내 1:1 문의</a></li>
+                            <li><a href="#">패널 탈퇴</a></li>
+                        </ul>
+                        <ul class="sub_nav">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">1:1 문의하기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hb_right">
+                <button class="search"></button>
+                <form action="#" id="searchFrm" method="post">
+                    <fieldset>
+                        <legend>검색양식</legend>
+                        <input type="search" name="searchTxt" class="searchTxt" placeholder="검색어 입력">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="s1_wrap">
+        <div class="main_bnr">
+            <p><img src="images/bnr1.jpg" alt="봄맞이 이벤트"></p>
+            <p><img src="images/bnr2.png" alt="봄맞이 이벤트"></p>
+            <p><img src="images/bnr3.png" alt="봄맞이 이벤트"></p>
+        </div>
+        <button class="pause">일시정지/재생</button>
+        <div id="often_wrap">
+            <div class="often">
+                <a href="#">적립금</a>
+                <a href="#">조사 참여</a>
+                <a href="#">좌담회 참여</a>
+                <a href="#">이벤트</a>
+                <a href="#">혜택</a>
+            </div>
+        </div>
+    </div>
+    <div id="s2_wrap">
+        <section>
+            <h2>조사참여하기</h2>
+            <div class="s2_tab_wrap">
+                <div class="s2_tab">
+                    <button>전체</button>
+                    <button>좌담회</button>
+                    <button>조사</button>
+                </div>
+            </div>
+            <div class="survey_wrap">
+                <div class="all_survey">
+                    <div class="column_1 column">
+                        <a href="#" class="meet all1">
+                            <p class="img"></p>
+                            <div class="txt">
+                                <h3>택시기사님 대상 인터뷰</h3>
+                                <p class="reward">150,000원</p>
+                                <p class="during">2020.03.04~2020.03.25</p>
+                            </div>
+                        </a>
+                        <a href="#" class="meet all1">
+                            <p class="img"></p>
+                            <div class="txt">
+                                <h3>럭셔리 라이프스타일 관련 가정방문 인터뷰</h3>
+                                <p class="reward">130,000원</p>
+                                <p class="during">2020.03.15~2020.03.31</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_2 column">
+                        <a href="#" class="pc_mobile_survey  all2">
+                            <h3>금융 관련 조사</h3>
+                            <p>[86173]<br>
+                                <span>1,300원 ~ 3,200원</span>
+                                2020.03.04~2020.03.25
+                            </p>
+                        </a>
+                        <a href="#" class="meet  all1">
+                            <p class="img"></p>
+                            <div class="txt">
+                                <h3>럭셔리 라이프스타일 관련 가정방문 인터뷰</h3>
+                                <p class="reward">130,000원</p>
+                                <p class="during">2020.03.15~2020.03.31</p>
+                            </div>
+                        </a>
+                        <a href="#" class="pc_mobile_survey  all2">
+                            <h3>금융 관련 조사</h3>
+                            <p>[86173]<br>
+                                <span>1,300원 ~ 3,200원</span><br>
+                                2020.03.04~2020.03.25
+                            </p>
+                        </a>
+                    </div>
+                    <div class="column_3 column">
+                        <a href="#" class="meet  all1">
+                            <p class="img"></p>
+                            <div class="txt">
+                                <h3>택시기사님 대상 인터뷰</h3>
+                                <p class="reward">150,000원</p>
+                                <p class="during">2020.03.04~2020.03.25</p>
+                            </div>
+                        </a>
+                        <a href="#" class="pc_mobile_survey  all2">
+                            <h3>인식 관련 조사</h3>
+                            <p>[86173]<br>
+                                <span>1,300원 ~ 3,200원</span><br>
+                                2020.03.04~2020.03.25<br>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="meet_survey">
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>택시기사님 대상 인터뷰</h3>
+                            <p class="reward">150,000원</p>
+                            <p class="during">2020.03.04~2020.03.25</p>
+                        </div>
+                    </a>
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>럭셔리 라이프스타일 관련 가정방문 인터뷰</h3>
+                            <p class="reward">130,000원</p>
+                            <p class="during">2020.03.15~2020.03.31</p>
+                        </div>
+                    </a>
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>택시기사님 대상 인터뷰</h3>
+                            <p class="reward">150,000원</p>
+                            <p class="during">2020.03.04~2020.03.25</p>
+                        </div>
+                    </a>
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>럭셔리 라이프스타일 관련 가정방문 인터뷰</h3>
+                            <p class="reward">130,000원</p>
+                            <p class="during">2020.03.15~2020.03.31</p>
+                        </div>
+                    </a>
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>택시기사님 대상 인터뷰</h3>
+                            <p class="reward">150,000원</p>
+                            <p class="during">2020.03.04~2020.03.25</p>
+                        </div>
+                    </a>
+                    <a href="#" class="meet meet1">
+                        <p class="img"></p>
+                        <div class="txt">
+                            <h3>럭셔리 라이프스타일 관련 가정방문 인터뷰</h3>
+                            <p class="reward">130,000원</p>
+                            <p class="during">2020.03.15~2020.03.31</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p_m_survey">
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>금융 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,300원 ~ 3,200원</span><br>
+                            2020.03.04~2020.03.25
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>인식 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,000원 ~ 3,000원</span><br>
+                            2020.03.01~2020.03.31
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>금융 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,300원 ~ 3,200원</span><br>
+                            2020.03.04~2020.03.25
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>인식 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,000원 ~ 3,000원</span><br>
+                            2020.03.01~2020.03.31
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>금융 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,300원 ~ 3,200원</span><br>
+                            2020.03.04~2020.03.25
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>인식 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,000원 ~ 3,000원</span><br>
+                            2020.03.01~2020.03.31
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>금융 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,300원 ~ 3,200원</span><br>
+                            2020.03.04~2020.03.25
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>인식 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,000원 ~ 3,000원</span><br>
+                            2020.03.01~2020.03.31
+                        </p>
+                    </a>
+                    <a href="#" class="pc_mobile_survey p_m_s">
+                        <h3>인식 관련 조사</h3>
+                        <p>[86173]<br>
+                            <span>1,000원 ~ 3,000원</span><br>
+                            2020.03.01~2020.03.31
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="more">
+                <a href="#">more<span></span></a>
+            </div>
+        </section>
+    </div>
+    <div id="s3_wrap">
+        <section>
+            <h2>재미있는 조사세상</h2>
+            <ul class="survey_result">
+                <li>
+                    <a href="#">
+                        <p><img src="images/result_1.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p><img src="images/result_2.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="images/result_3.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p><img src="images/result_4.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="images/result_1.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p><img src="images/result_2.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p><img src="images/result_3.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p><img src="images/result_4.png" alt style="height: auto;"><span>조회수</span></p>
+                        <div class="title">
+                            <h3>피부 고민 2위는 "피부 탄력", 1위는?</h3>
+                            <p>2020.03.03</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div id="s4_wrap">
+        <section>
+            <div class="notice">
+                <h3><a href="#">공지사항</a></h3>
+                <div class="notice_contents">
+                    <a href="#">2020년 2월 추천이벤트 당첨자 발... <span>2020.03.26</span></a>
+                    <a href="#">2020년 2월 가입이벤트 당첨자 발...<span>2020.03.25</span></a>
+                    <a href="#">[3월 26일] 상품권 신청 중단 안...<span>2020.03.24</span></a>
+                    <a href="#">[3월 23일] 고객센터 운영 일시 ...<span>2020.03.23</span></a>
+                    <a href="#">[3월 26일] 상품권 신청 중단 안...<span>2020.03.24</span></a>
+                </div>
+            </div>
+            <div class="faq">
+                <h3><a href="#">엠브레인 FAQ</a></h3>
+                <p>패널들이<br>자주 찾는 질문입니다.</p>
+                <a href="#" class="quest">1:1 질문하기</a>
+                <a herf="#" class="center">엠브레인 고객센터<br><span>1588-8484</span></a>
+            </div>
+            <div class="embrain_news">
+                <a href="#"><img src="images/mProtectionImg.gif" alt="국내 리서치사 유일 개인정보보호 인증"></a>
+                <a href="#"><img src="images/mSaving_bg.gif" alt="1%의 적립금이 만드는 100%의 기적"></a>
+            </div>
+        </section>
+    </div>
+    <div id="f_wrap">
+        <footer>
+            <div class="f_left">
+                <div class="top">
+                    <a href="#">회사소개</a>
+                    <a href="#">오시는 길</a>
+                    <a href="#">이용약관</a>
+                    <a href="#"><span>개인정보처리방침</span></a>
+                    <a href="#">사이트맵</a>
+                </div>
+                <div class="btm">
+                    <p><span>엠브레인 패널파워 고객센터 1588-8484</span><br>
+                        06253 서울특별시 강남구 강남대로 318 (역삼동 837 타워) 3~4층, 10~14층<br>
+                        (주)마크로밀 엠브레인 대표이사 최인수사업자번호 105-81-98720<br>
+                        COPYRIGHT MACROMILL EMBRAIN. All RIGHTS RESERVED.</p>
+                </div>
+            </div>
+            <div class="f_right">
+                <div class="site_wrap">
+                    <div class="site">
+                        <a href="#">마크로밀엠브레인</a>
+                        <a href="#">엠브레인퍼블릭</a>
+                        <a href="#">마크로밀재팬</a>
+                        <a href="#">마크로밀차이나</a>
+                        <a href="#">EOL엠브레인</a>
+                        <a href="#">metrixLAB</a>
+                        <a href="#">-------------</a>
+                        <a href="#">트렌드모니터</a>
+                        <a href="#">EZ서베이</a>
+                    </div>
+                    <button class="wrap">관련 사이트 <span>▼</span></button>
+                </div>
+                <div class="certify">
+                    <p><span>개인정보보호</span><br>우수사이트</p>
+                    <p><span>ISO9001</span><br>인증"</p>
+                    <p>powered by <span>digicert</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<!---->

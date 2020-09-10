@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>아름다워지는 공간, 아리따움몰</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="아모레퍼시픽 대표 뷰티 편집샵,스킨,메이크업,바디,뷰티툴 등 아리따움 공식 쇼핑몰.">
+    <meta name="keywords" content="아리따움 브랜드관, 라네즈, 뷰티팁, 세일보기, 이벤트, 메이크업, 바디, 뷰티툴">
+    <!--reset, main css적용-->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <!--웹폰트 적용-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--script적용-->
+    <script type="text/javascript" src="script/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <!--slick_css적용-->
+    <link rel="stylesheet" href="script/slick-1.8.1/slick-1.8.1/slick/slick.css" type="text/css">
+</head>
+
+
+<body>
+    <!--최근본상품-->
+    <div id="recent_wrap">
+        <div class="recent_top">
+            <p class="title">최근 본 상품</p>
+            <button class="all_delete">전체삭제</button>
+        </div>
+        <a class="recent_products_wrap">
+            <p class="close"><img src="images/close.png" alt="삭제하기"></p>
+            <!--백그라운드로 상품사진넣기-->
+            <div class="detail">
+                <span class="brand">헤라</span>
+                <p class="name">브로우 디자이너팩트</p>
+                <p class="price">38,000원</p>
+            </div>
+        </a>
+    </div>
+    <!--e:최근본상품-->
+    <!--wingbnr광고-->
+    <div id="wing_bnr_wrap">
+        <a href="index_promotion.html">ARITAUM<br><em>뷰티서비스</em> 예약하기</a>
+        <a href="index_promotion.html"><em>1+1</em><br>상품 모아보기</a>
+        <a href="index_promotion.html"><em>최대 50%</em> <br>할인상품 모아보기</a>
+        <button class="top">TOP</button>
+    </div>
+    <!--e:wingbnr광고-->
+    <!--header-->
+    <div id="h_wrap">
+        <header>
+            <div class="h_top">
+                <h1><a href="#"><img src="images/header--logo.png" alt="아리따움"></a></h1>
+                <form action="#" method="post" id="searchFrm">
+                    <fieldset>
+                        <legend>검색양식</legend>
+                        <input type="search" name="searchTxt" class="searchTxt">
+                        <input type="submit" value="검색" class="searchBtn">
+                        <!--text-indent:9999px;로밀기-->
+                    </fieldset>
+                </form>
+                <div class="ht_right">
+                    <!--text-indent:9999px;로밀기-->
+                    <a href="index_promotion.html">마이페이지</a>
+                    <a href="#" id="recent_icon">최근본상품</a>
+                    <a href="index_promotion.html">장바구니</a>
+                </div>
+            </div>
+            <div class="h_btm">
+                <nav>
+                    <!--카테고리 누르면 s1 배경 흰색 되고 서브 메뉴 보임-->
+                    <button id="all_menu">
+                        <div class="menu_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>카테고리</p>
+                    </button>
+                    <ul>
+                        <!--브랜드 누르면 메인 배너 화면에 브랜드 목록나옴-->
+                        <li class="main_nav brand_nav">
+                            <a href="#" class="nav_title">브랜드</a>
+                            <div class="brand_sub">
+                                <p>AMOREPACIFIC BRAND</p>
+                                <ul>
+                                    <li><a href="index_promotion.html">아리따움(ARITAUM)</a></li>
+                                    <li><a href="index_promotion.html">아이오페(IOPE)</a></li>
+                                    <li><a href="index_promotion.html">라네즈(LANEIGE)</a></li>
+                                    <li><a href="index_promotion.html">마몽드(MAMONDE)</a></li>
+                                    <li><a href="index_promotion.html">한율(HANYUL)</a></li>
+                                    <li><a href="index_promotion.html">헤라(HERA)</a></li>
+                                    <li><a href="index_promotion.html">려(Ryo)</a></li>
+                                </ul>
+                                <p>NEW BRAND</p>
+                                <ul>
+                                    <li><a href="index_promotion.html">듀이트리(DEWYTREE)</a></li>
+                                    <li><a href="index_promotion.html">콤리프(Commleaf)</a></li>
+                                    <li><a href="index_promotion.html">파머시(FARMACY)</a></li>
+                                    <li><a href="index_promotion.html">자이모겐(ZYMOGEN)</a></li>
+                                    <li><a href="index_promotion.html">셀라피(Cellapy)</a></li>
+                                    <li><a href="index_promotion.html">메이크프렘(makep:rem)</a></li>
+                                    <li><a href="index_promotion.html">렛미스킨(LET ME SKIN)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_nav"><a href="index_promotion.html" class="nav_title">뷰티팁</a></li>
+                        <li class="main_nav"><a href="index_promotion.html" class="nav_title">리뷰</a></li>
+                        <li class="main_nav"><a href="index_promotion.html" class="nav_title">이벤트</a></li>
+                    </ul>
+                </nav>
+                <div class="hb_right">
+                    <a href="index_promotion.html">마일리지샵</a>
+                    <a href="index_promotion.html">뷰티서비스 예약</a>
+                    <a href="index_promotion.html">아리따움 마켓</a>
+                </div>
+            </div>
+            <!--e:h_btm-->
+        </header>
+    </div>
+    <!--e:h_wrap-->
+    <!--section1-->
+    <div id="s1_wrap">
+        <p class="s1_sub_wrap"></p>
+        <div class="center">
+            <p class="slide_list">
+                <img src="images/main_bnr2.jpg" alt="백화고 라인 ~20% off">
+            </p>
+            <p class="slide_list">
+                <img src="images/main_bnr1.jpg" alt="아리따움 메이크업 ~50% off">
+            </p>
+            <p class="slide_list">
+                <img src="images/main_bnr2.jpg" alt="백화고 라인 ~20% off">
+            </p>
+            <p class="slide_list">
+                <img src="images/main_bnr1.jpg" alt="아리따움 메이크업 ~50% off">
+            </p>
+            <p class="slide_list">
+                <img src="images/main_bnr2.jpg" alt="백화고 라인 ~20% off">
+            </p>
+        </div>
+        <!--e:slide-->
+        <section>
+            <!--카테고리 하나씩 누르면 배경, 글씨 색 바뀌고 서브메뉴나옴-->
+            <ul class="category">
+                <li>
+                    <a href="#">스킨케어</a>
+                    <div class="sub_wrap sub_wrap1">
+                        <ul class="sub">
+                            <li><em>스킨케어</em></li>
+                            <li><a href="index_promotion.html">기초</a></li>
+                            <li><a href="index_promotion.html">스팟케어</a></li>
+                            <li><a href="index_promotion.html">클렌징</a></li>
+                            <li><a href="index_promotion.html">마스크팩</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">메이크업</a>
+                    <div class="sub_wrap sub_wrap2">
+                        <ul class="sub">
+                            <li><em>메이크업</em></li>
+                            <li><a href="index_promotion.html">베이스 메이크업</a></li>
+                            <li><a href="index_promotion.html">립 메이크업</a></li>
+                            <li><a href="index_promotion.html">아이 메이크업</a></li>
+                            <li><a href="index_promotion.html">치크 메이크업</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">소품</a>
+                    <div class="sub_wrap  sub_wrap3">
+                        <ul class="sub">
+                            <li><em>소품</em></li>
+                            <li><a href="index_promotion.html">페이스 소품</a></li>
+                            <li><a href="index_promotion.html">아이 소품</a></li>
+                            <li><a href="index_promotion.html">바디/헤어 소품</a></li>
+                            <li><a href="index_promotion.html">메이크업 브러시</a></li>
+                            <li><a href="index_promotion.html">파우치/공용기</a></li>
+                            <li><a href="index_promotion.html">리빙 소품</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">네일·향수</a>
+                    <div class="sub_wrap sub_wrap4">
+                        <ul class="sub">
+                            <li><em>네일·향수</em></li>
+                            <li><a href="index_promotion.html">네일</a></li>
+                            <li><a href="index_promotion.html">향수/디퓨저</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">바디·헤어</a>
+                    <div class="sub_wrap sub_wrap5">
+                        <ul class="sub">
+                            <li><em>바디·헤어</em></li>
+                            <li><a href="index_promotion.html">바디</a></li>
+                            <li><a href="index_promotion.html">헤어</a></li>
+                            <li><a href="index_promotion.html">구강관리</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뷰티푸드</a>
+                    <div class="sub_wrap sub_wrap6">
+                        <ul class="sub">
+                            <li><em>뷰티푸드</em></li>
+                            <li><a href="index_promotion.html">슬리밍</a></li>
+                            <li><a href="index_promotion.html">이너뷰티</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">옴므·키즈</a>
+                    <div class="sub_wrap sub_wrap7">
+                        <ul class="sub">
+                            <li><em>옴므·키즈</em></li>
+                            <li><a href="index_promotion.html">남성 스킨커어</a></li>
+                            <li><a href="index_promotion.html">남성 메이크업</a></li>
+                            <li><a href="index_promotion.html">남성 바디/헤어</a></li>
+                            <li><a href="index_promotion.html">키즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뷰티서비스·기프트카드</a>
+                    <div class="sub_wrap sub_wrap8">
+                        <ul class="sub">
+                            <li><em>뷰티서비스·기프트카드</em></li>
+                            <li><a href="index_promotion.html">스팟케어</a></li>
+                            <li><a href="index_promotion.html">클렌징</a></li>
+                            <li><a href="index_promotion.html">마스크팩</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--e:s1_wrap-->
+    <!--section2-->
+    <div id="s2_wrap">
+        <!-- <div class="section_btn">
+            <button class="prev"><img src="images/prev.png" alt="베스트셀러 이전상품리스트보기"></button>
+            <button class="next"><img src="images/next.png" alt="베스트셀러 다음상품리스트보기"></button>
+        </div>-->
+        <section>
+            <h2>BEST SELLER</h2><span></span>
+            <ul class="best_seller">
+                <li>
+                    <p class="best_num">01</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모디스파 버플 풋 샴푸</p>
+                            <span class="before_price">13,000원</span>
+                            <p class="item_price"><span>20%</span>10,400원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">02</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">라네즈</span>
+                            <p class="item_name">래디언씨 크림-3월 출시</p>
+                            <span class="before_price">30,000원</span>
+                            <p class="item_price"><span>20%</span>24,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">03</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모노아이즈 팔레트</p>
+                            <span class="before_price"></span>
+                            <p class="item_price"><span></span>25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">04</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모노아이즈</p>
+                            <span class="before_price">5,000원</span>
+                            <p class="item_price"><span>30%</span>3,500원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">05</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모디스파 버플 풋 샴푸</p>
+                            <span class="before_price">13,000원</span>
+                            <p class="item_price"><span>20%</span>10,400원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">06</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">라네즈</span>
+                            <p class="item_name">래디언씨 크림-3월 출시</p>
+                            <span class="before_price">30,000원</span>
+                            <p class="item_price"><span>20%</span>24,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">07</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모노아이즈 팔레트</p>
+                            <span class="before_price"></span>
+                            <p class="item_price"><span></span>25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <p class="best_num">08</p>
+                    <a href="index_promotion.html" class="best_img">
+                        <div class="best_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모노아이즈</p>
+                            <span class="before_price">5,000원</span>
+                            <p class="item_price"><span>30%</span>3,500원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--e:s2_wrap-->
+    <!--배너1-->
+    <div class="bnr_wrap bnr_wrap1">
+        <img src="images/bnr_1.png" alt="Live Deal 한정수량 up to 50% off" style="max-width: 100%; height: auto;">
+    </div>
+    <!--e:bnr_wrap1-->
+    <!--section3-->
+    <div id="s3_wrap">
+        <section>
+            <h2>BRAND</h2><span></span>
+            <div id="tab_wrap">
+                <ul class="brand_name">
+                    <li><button>헤라</button></li>
+                    <li><button>캣매코니</button></li>
+                    <li><button>잉가</button></li>
+                    <li><button>뿌빠</button></li>
+                    <li><button>리리코스</button></li>
+                    <li><button>프리메라</button></li>
+                    <li><button>해서린</button></li>
+                    <li><button>헤라</button></li>
+                    <li><button>잉가</button></li>
+                    <li><button>캣매코니</button></li>
+                    <li><button>뿌빠</button></li>
+                    <li><button>리리코스</button></li>
+                    <li><button>프리메라</button></li>
+                    <li><button>해서린</button></li>
+                </ul>
+            </div>
+            <ul class="brand_item brand_item1">
+                <li class="brand_intro">
+                    <a href="index_promotion.html"><img src="images/hera_logo.png" alt="헤라"></a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 밤</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 글로스</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 틴트 325</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 인텐스 벨벳 339</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">블랙쿠션 SPF34 PA++</p>
+                            <p class="item_price">25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">브로우 디자이너 팩트</p>
+                            <p class="item_price">38,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">시그니아 워터 180ml</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="brand_item brand_item2">
+                <li class="brand_intro">
+                    <a href="index_promotion.html"><img src="images/katmaconie_logo.png" alt="켓메코니"></a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 밤</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 글로스</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 틴트 325</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 인텐스 벨벳 339</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">블랙쿠션 SPF34 PA++</p>
+                            <p class="item_price">25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">브로우 디자이너 팩트</p>
+                            <p class="item_price">38,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">시그니아 워터 180ml</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="brand_item brand_item3">
+                <li class="brand_intro">
+                    <a href="index_promotion.html"><img src="images/hera_logo.png" alt="헤라"></a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 밤</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 글로스</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 틴트 325</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 인텐스 벨벳 339</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">블랙쿠션 SPF34 PA++</p>
+                            <p class="item_price">25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">브로우 디자이너 팩트</p>
+                            <p class="item_price">38,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">시그니아 워터 180ml</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="brand_item brand_item4">
+                <li class="brand_intro">
+                    <a href="index_promotion.html"><img src="images/katmaconie_logo.png" alt="켓메코니"></a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 밤</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 스파이시 누드 글로스</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 틴트 325</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 인텐스 벨벳 339</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">블랙쿠션 SPF34 PA++</p>
+                            <p class="item_price">25,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">브로우 디자이너 팩트</p>
+                            <p class="item_price">38,000원</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="index_promotion.html">
+                        <div class="brand_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">시그니아 워터 180ml</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--e:s3_wrap-->
+    <!--section4-->
+    <div id="s4_wrap">
+        <section>
+            <h2>EVENT</h2><span></span>
+            <a href="index_promotion.html" class="more">더보기 +</a>
+            <ul class="event_wrap">
+                <li class="event event1">
+                    <a href="index_promotion.html">
+                        <span></span>
+                        <p class="event_title">아리따움 온라인몰 3월 구매혜택<br><span>2020.03.01~2020.03.31</span><em>D-27</em></p>
+                    </a>
+                </li>
+                <li class="event event2">
+                    <a href="index_promotion.html">
+                        <span></span>
+                        <p class="event_title">아리따움 온라인몰 특별한 SALE<br><span>2020.03.01~2020.03.31</span><em>D-27</em></p>
+                    </a>
+                </li>
+                <li class="event event3">
+                    <a href="index_promotion.html">
+                        <span></span>
+                        <p class="event_title">NEW 아리따움 마일리지를 소개합니다.<br><span>2020.03.01~2020.03.31</span><em>D-27</em></p>
+                    </a>
+                </li>
+                <li class="event event4">
+                    <a href="index_promotion.html">
+                        <span></span>
+                        <p class="event_title">라네즈 래디언-C 크림 베스트 리뷰어 이벤트<br><span>2020.03.01~2020.03.31</span><em>D-27</em></p>
+                    </a>
+                </li>
+            </ul>
+            <!--e:event_wrap-->
+        </section>
+    </div>
+    <!--e:s4_wrap-->
+    <!--배너2-->
+    <div class="bnr_wrap bnr_wrap2">
+        <img src="images/bnr_02.png" alt="한혜연 pick! 글로벌 no.1 클렌징밤 본품구매시 12ml 샘플증정" style="max-width: 100%; height: auto;">
+    </div>
+    <!--e:bnr_wrap2-->
+    <!--section5-->
+    <div id="s5_wrap">
+        <section>
+            <h2>REVIEW</h2><span></span>
+            <a href="index_promotion.html" class="more">더보기 +</a>
+            <ul class="review_wrap">
+                <li>
+                    <a href="index_promotion.html" class="review_pop">
+                        <p></p>
+                        <div class="review_detail">
+                            <p class="id">taey**</p>
+                            <p class="review">헤라 누드 글로스라인들 색상이 다 너무 이뻐요. 란제리 써보고 맘에 들어서 큐리어스 보이도 구매했어요. 튀지도 않고 제 입술색 같으면서 촉촉하고 입술이 탱글탱글해보여요. 케이스도 귀엽고 이뻐요. 봄에 청순하게 바르기 좋을거 같···</p>
+                            <p class="score">
+                                <img src="images/star.png" alt>
+                                <img src="images/star.png" alt>
+                                <img src="images/star.png" alt>
+                                <img src="images/star.png" alt>
+                                <img src="images/star_black.png" alt>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="index_promotion.html" class="review_item">
+                        <!--백그라운드로 아이템 이미지-->
+                        <div class="item_detail">
+                            <span class="brand">헤라</span>
+                            <p class="item_name">센슈얼 인텐스 벨벳 339</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                    <a href="index_promotion.html" class="basket">장바구니</a>
+                </li>
+                <li>
+                    <a href="index_promotion.html" class="review_pop">
+                        <p></p>
+                        <div class="review_detail">
+                            <p class="id">taey**</p>
+                            <p class="review">헤라 누드 글로스라인들 색상이 다 너무 이뻐요. 란제리 써보고 맘에 들어서 큐리어스 보이도 구매했어요. 튀지도 않고 제 입술색 같으면서 촉촉하고 입술이 탱글탱글해보여요. 케이스도 귀엽고 이뻐요. 봄에 청순하게 바르기 좋을거 같···</p>
+                            <p class="score">
+                                <img src="images/star.png" alt>
+                                <img src="images/star.png" alt>
+                                <img src="images/star.png" alt>
+                                <img src="images/star_black.png" alt>
+                                <img src="images/star_black.png" alt>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="index_promotion.html" class="review_item">
+                        <div class="review_detail">
+                            <span class="brand">아리따움</span>
+                            <p class="item_name">모노아이즈 팔레트</p>
+                            <p class="item_price">35,000원</p>
+                        </div>
+                    </a>
+                    <a href="index_promotion.html" class="basket">장바구니</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--e:s5_wrap-->
+    <!--section6-->
+    <div id="s6_wrap">
+        <section>
+            <h2>당신께 추천드려요</h2><span></span>
+            <a href="index_promotion.html" class="more">더보기 +</a>
+            <div class="recomand_wrap">
+                <h3>고객님, 이런 상품을<br>찾고 계신가요?</h3>
+                <span></span>
+                <p>고객님이 원하시는 상품을 찾아드립니다.</p>
+                <div class="login_join">
+                    <a href="index_promotion.html" class="login">로그인</a>
+                    <a href="index_promotion.html" class="join">회원가입</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--e:s6_wrap-->
+    <!--배너3-->
+    <div class="bnr_wrap bnr_wrap3">
+        <img src="images/bnr_03.png" alt="스틱크림 세트구매시 50% off & 꿀톤 파우치 증정" style="max-width: 100%; height: auto;">
+    </div>
+    <!--e:bnr_wrap3-->
+    <!--section7-->
+    <div id="s7_wrap">
+        <section>
+            <h2>BEAUTY TIP</h2><span></span>
+            <a href="index_promotion.html" class="more">더보기 +</a>
+            <div class="tip tip1">
+                <div class="tip_video">
+                    <video poster="images/video_1.png" class="tip_vid">
+                        <source src="video/beauti_tip1.mp4" type="video/mp4">
+                    </video>
+                    <button class="play"></button>
+                    <p>타고난 듯 맑고 볼드한 립 연출 방법! <span>LIP MAKE-UP</span></p>
+                </div>
+                <a class="tip_item">
+                    <span class="brand">헤라</span>
+                    <p class="item_name">센슈얼 스파이시 누드 글로스</p>
+                    <p class="item_price">35,000원</p>
+                </a>
+            </div>
+            <div class="tip tip2">
+                <div class="tip_video">
+                    <video poster="images/video_2.png" class="tip_vid">
+                        <source src="video/beauti_tip2.mp4" type="video/mp4">
+                    </video>
+                    <button class="play"></button>
+                    <p>섀도우의 명가 모노아이즈 베스트컬러를 한 팔레트에서!<span>LIP MAKE-UP</span></p>
+                </div>
+                <a href="index_promotion.html" class="tip_item">
+                    <span class="brand">아리따움</span>
+                    <p class="item_name">모노아이즈 팔레트</p>
+                    <p class="item_price">25,000원</p>
+                </a>
+            </div>
+        </section>
+    </div>
+    <!--e:s7_wrap-->
+    <!--배너4-->
+    <div class="bnr_wrap bnr_wrap4">
+        <img src="images/bnr_04.png" alt="셀라피 전 품목 50% off" style="max-width: 100%; height: auto;">
+    </div>
+    <!--e:bnr_wrap4-->
+    <!--section8-->
+    <div id="s8_wrap">
+        <section>
+            <h2>ARITAUM X BRAND <span>지금, 브랜드 소식을 만나보세요.</span></h2>
+            <span></span>
+        </section>
+        <ul class="news">
+            <li><a href="index_promotion.html"><img src="images/news_01.png" alt="bourjois 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_02.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_03.png" alt="프리메라 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_04.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_05.png" alt="아이오페 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_06.png" alt="bourjois 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_07.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_08.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_09.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_10.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_11.png" alt="꿀톤 소식보기" style="max-width: 100%; height: auto;"></a></li>
+            <li><a href="index_promotion.html"><img src="images/news_12.png" alt="espoir 소식보기" style="max-width: 100%; height: auto;"></a></li>
+        </ul>
+    </div>
+    <!--e:section8-->
+    <!--footer-->
+    <div id="f_wrap">
+        <div class="f_top_wrap">
+            <div class="f_top">
+                <a href="index_promotion.html"><img src="images/ft_logo.png" alt="아리따움"></a>
+                <a href="index_promotion.html">아리따움 소개</a>
+                <a href="index_promotion.html">아리따움 매장</a>
+                <a href="index_promotion.html">가맹점 개설문의</a>
+                <a href="index_promotion.html">브랜드 입점문의</a>
+                <a href="index_promotion.html">아리따움 제휴서비스</a>
+                <a href="index_promotion.html">온라인 카드사 혜택</a>
+            </div>
+            <!--e:f_top-->
+        </div>
+    </div>
+    <!--e:f_wrap-->
+    <footer>
+        <div class="f_left">
+            <div class="top">
+                <a href="index_promotion.html">사이트 이용약관</a>
+                <a href="index_promotion.html">개인정보처리방침</a>
+                <a href="index_promotion.html">공지사항 &amp; 고객센터</a>
+            </div>
+            <p>(주)아모레 퍼시픽 대표이사 : 안세홍 <br>서울특별시 용산구 한강대로 100 (한강로 2가) 사업자 등록번호 : 106-86-43373
+                <a href="index_promotion.html" class="f_check">사업자 정보확인</a><br>
+                통신판매업신고번호 : 2017-서울용산-1308호 / 건강기능식품판매업 영업신고증 제8호 <br>
+                <span>(주)이니시스 구매안전서비스</span> 고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다.
+                <a href="index_promotion.html" class="f_check">서비스 가입사실 확인</a><br>
+                아리따움의 모든 고객은 월 100만원(라네즈 글로벌 상품 월 50만원)/연 300만원 내에서 할인 혜택을 받을 수 있습니다. (온/오프라인 합산) <br>AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED.
+            </p>
+        </div>
+        <!--e:f_left-->
+        <div class="f_center">
+            <p class="custom">고객센터 이용안내</p>
+            <span>온라인 문의</span>
+            <p class="phone">080-555-6006</p>
+            <span>제품 및 매장 문의</span>
+            <p class="phone">080-023-5454</p>
+            <span>운영시간 : AM9 ~ PM6 (주말 및 공휴일 휴무)</span>
+            <span>점심시간 : PM1 ~ PM2 </span>
+        </div>
+        <!--e:f_center-->
+        <div class="f_right">
+            <a href="index_promotion.html" class="sns">페이스북</a>
+            <a href="index_promotion.html" class="sns">인스타그램</a>
+            <a href="index_promotion.html" class="sns">모디네일</a>
+            <a href="index_promotion.html" class="sns">카카오톡채널-아리따움</a>
+        </div>
+        <!--e:f_right-->
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--끝-->

@@ -1,0 +1,135 @@
+/*태블릿*/
+@media screen and (max-width:1200px){
+    /*공통 너비*/
+    header, section, footer, .often {width: 100%;}
+    /*header*/
+    header .h_top { width:100%;}     
+    header .h_top .ht_left {width: 100%; position: relative;} 
+    header .h_top .ht_left h1 {width: 100%; text-align: center;}
+    header .h_top .ht_left .login {position: absolute; right: 5%; top:0;}
+    header .h_top .ht_left .login a:nth-child(2){border-right: 0;}
+    header .h_top .ht_left .login a:last-child{display: none; }
+    header .h_top .ht_right {display: none;}
+    #h_btm_wrap .h_btm {width: 100%;}
+    #h_btm_wrap .h_btm nav ul.main_nav li {}
+    #h_btm_wrap .h_btm .hb_right .search {display: none;}
+    /*section1*/
+    #s1_wrap {width:100%;}
+    #s1_wrap .main_bnr {width:100%;}
+    /*자주사용*/
+    #s1_wrap #often_wrap .often {width:80%;}
+    #s1_wrap #often_wrap .often a {background-size: 35%;}
+    /*section2*/
+    #s2_wrap section .survey_wrap .all_survey .column {width:50%;}
+   
+}/*테블릿 끝*/
+
+/*모바일*/
+@media screen and (max-width:800px){
+     section h2 {font-size: 1.8em; }
+    #h_btm_wrap .h_btm { display: none;}
+    header {height: 50px;}
+/*모바일 전체메뉴 내비*/
+    header .h_top {position: relative;}
+    header .h_top .ht_left .login {display: none;}
+    header .h_top .ht_left h1 {margin-top: 0px;}
+    header .h_top a.all_menu { position: absolute; top: 0; left: 0;
+        width:50px; height: 50px; display: block; 
+        background-color: #35698b; padding: 12px 7px;
+    }
+    header .h_top  a.all_menu span {
+    background-color: #fff; height: 3px; width:100%; 
+        display: block; margin-bottom: 7px;
+    }
+    header .h_top a.person {display: block; 
+    background-image: url(../images/person.png);
+    background-position: center; position: absolute;
+        background-repeat: no-repeat;
+    background-color: #35698b;
+        width:50px; height: 50px; top: 0; right: 0;}
+    #h_btm_wrap .h_btm .hb_right .search {display: none;}
+/*section1*/
+        #s1_wrap #often_wrap .often {width:100%; border-radius: 0;}    
+    #s1_wrap #often_wrap .often a {background-size: 50%; font-size: 0.875em;}
+/*section2*/
+    #s2_wrap {height: 1735px;}
+    #s2_wrap section {padding-top: 100px;}
+    #s2_wrap section .s2_tab_wrap .s2_tab {margin-top: 45px;}
+    #s2_wrap section .s2_tab_wrap .s2_tab button:nth-child(1){left:-8%;}
+    #s2_wrap section .s2_tab_wrap .s2_tab button:nth-child(3){left:106%; }
+    #s2_wrap section .survey_wrap { height: 1280px;}
+    #s2_wrap section .survey_wrap h3 {font-size: 1.15em;}
+    #s2_wrap section .survey_wrap .meet .txt .reward {font-size: 1em;}
+    #s2_wrap section .survey_wrap .meet .txt .during {font-size: 0.938em;}
+    
+    #s2_wrap section .survey_wrap .pc_mobile_survey { padding: 40px 20px 20px;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey h3 {
+        height: 60%;}
+    #s2_wrap section .survey_wrap .pc_mobile_survey p{font-size:0.875em; }
+    #s2_wrap section .survey_wrap .pc_mobile_survey p span {font-size: 1.143em;}
+    
+    #s2_wrap section .survey_wrap .all_survey .column:nth-child(2) {margin-right: 0;}
+    #s2_wrap section .survey_wrap .all_survey .column {
+        width:48%; margin-right: 4%;}
+    #s2_wrap section .survey_wrap .all_survey .column_3 {display: none;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey {margin-right: 2%;}
+    #s2_wrap section .survey_wrap .meet .img {background-size: auto;}
+    #s2_wrap section .survey_wrap .pc_mobile_survey h3{
+        background-position: 0 3px;
+    }
+    #s2_wrap section .survey_wrap .meet_survey .meet {
+        width:48%; margin-right: 4%;
+    }
+    
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(3){margin-right: 4%;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(6){margin-right: 4%;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(9){margin-right:4%;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(2){margin-right: 0;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(4){margin-right: 0;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(6){margin-right: 0;}
+    #s2_wrap section .survey_wrap .meet_survey .meet:nth-child(8){margin-right: 0;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey {
+    width: 48%; margin-right: 4%;}
+    
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(3) {margin-right: 4%;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(6) {margin-right: 4%;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(9) {margin-right: 4%;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(2) {margin-right: 0;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(4) {margin-right: 0;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(6) {margin-right: 0;}
+    #s2_wrap section .survey_wrap .p_m_survey .pc_mobile_survey:nth-child(8) {margin-right: 0;}
+/*section3*/
+    #s3_wrap {height: 800px;}
+    #s3_wrap section .survey_result li a{margin: 0 10px 0;
+        width: 460px; height: 198px;}
+    #s3_wrap section .survey_result li a .title h3 {height: 105px; font-size: 1.25em;}
+    #s3_wrap section .survey_result li a > p {width:50%;}
+    #s3_wrap section .survey_result li a > p img {width:100%; height: auto;}
+
+    #s4_wrap section >div {height: 263px; width: 98%; margin: 0 5px 60px; }
+    #s4_wrap section .notice {border: 0;}
+    #s4_wrap section .faq {border: 0;}
+    
+    #s3_wrap .slick-slider .slick-arrow {top:-135px;}
+    #s3_wrap .slick-slider .slick-prev {left: 40px;}
+    #s3_wrap .slick-slider .slick-next {right:40px;}
+/*section4*/    
+    #s4_wrap section .faq { background-color: #e2f4f7; height: 315px;
+    padding: 30px 30px;}
+    #s4_wrap section .embrain_news {height: max-content; text-align: center;}
+    #s4_wrap section .embrain_news a img{width:90%}
+/*footer*/
+    #f_wrap {height: 470px; margin-top: 0; }
+    #f_wrap footer .f_left {width:100%;padding: 0 10px}
+    #f_wrap footer .f_right {width:100%;padding: 0 10px}
+    #f_wrap footer .f_right .site_wrap {margin-right: 30px;}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}/*모바일 끝*/

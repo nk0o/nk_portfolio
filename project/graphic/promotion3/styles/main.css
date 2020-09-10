@@ -1,0 +1,17 @@
+.promotion {
+    background-color:aqua;
+    width:1000px; margin: 0 auto; position:relative;
+}
+.promotion:nth-child(1) {height: 282px; }
+.promotion:nth-child(2) {height: 303px; }
+.promotion p {}
+.promotion p img {}
+.promotion .popup {
+    position:absolute; right:86px; top:0;
+}
+.promotion .popup img {width:173px; height: 203px;}
+.promotion a {}
+.promotion a img {}}
+.promotion >img{}
+
+

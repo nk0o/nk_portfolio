@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>아름다워지는 공간, 아리따움몰</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="아모레퍼시픽 대표 뷰티 편집샵,스킨,메이크업,바디,뷰티툴 등 아리따움 공식 쇼핑몰.">
+    <meta name="keywords" content="아리따움 브랜드관, 라네즈, 뷰티팁, 세일보기, 이벤트, 메이크업, 바디, 뷰티툴">
+    <!--reset, main css적용-->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/promotion.css" type="text/css">
+    <!--웹폰트 적용-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--script적용-->
+    <script type="text/javascript" src="script/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/promotion.js"></script>
+    <!--slick_css적용-->
+    <link rel="stylesheet" href="script/slick-1.8.1/slick-1.8.1/slick/slick.css" type="text/css">
+</head>
+
+
+<body>
+    <!--최근본상품-->
+    <div id="recent_wrap">
+        <div class="recent_top">
+            <p class="title">최근 본 상품</p>
+            <button class="all_delete">전체삭제</button>
+        </div>
+        <a class="recent_products_wrap">
+            <p class="close"><img src="images/close.png" alt="삭제하기"></p>
+            <!--백그라운드로 상품사진넣기-->
+            <div class="detail">
+                <span class="brand">헤라</span>
+                <p class="name">브로우 디자이너팩트</p>
+                <p class="price">38,000원</p>
+            </div>
+        </a>
+    </div>
+    <!--e:최근본상품-->
+    <!--wingbnr광고-->
+    <div id="wing_bnr_wrap">
+        <a href="#">ARITAUM<br><em>뷰티서비스</em> 예약하기</a>
+        <a href="#"><em>1+1</em><br>상품 모아보기</a>
+        <a href="#"><em>최대 50%</em> <br>할인상품 모아보기</a>
+        <button class="top">TOP</button>
+    </div>
+    <!--e:wingbnr광고-->
+    <!--header-->
+    <div id="h_wrap">
+        <header>
+            <div class="h_top">
+                <h1><a href="#"><img src="images/header--logo.png" alt="아리따움"></a></h1>
+                <form action="#" method="post" id="searchFrm">
+                    <fieldset>
+                        <legend>검색양식</legend>
+                        <input type="search" name="searchTxt" class="searchTxt">
+                        <input type="submit" value="검색" class="searchBtn">
+                        <!--text-indent:9999px;로밀기-->
+                    </fieldset>
+                </form>
+                <div class="ht_right">
+                    <!--text-indent:9999px;로밀기-->
+                    <a href="#">마이페이지</a>
+                    <a href="#" id="recent_icon">최근본상품</a>
+                    <a href="#">장바구니</a>
+                </div>
+            </div>
+            <div class="h_btm">
+                <nav>
+                    <!--카테고리 누르면 s1 배경 흰색 되고 서브 메뉴 보임-->
+                    <button id="all_menu">
+                        <div class="menu_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>카테고리</p>
+                    </button>
+                    <ul>
+                        <!--브랜드 누르면 메인 배너 화면에 브랜드 목록나옴-->
+                        <li class="main_nav brand_nav">
+                            <a href="#" class="nav_title">브랜드</a>
+                            <div class="brand_sub">
+                                <p>AMOREPACIFIC BRAND</p>
+                                <ul>
+                                    <li><a href="#">아리따움(ARITAUM)</a></li>
+                                    <li><a href="#">아이오페(IOPE)</a></li>
+                                    <li><a href="#">라네즈(LANEIGE)</a></li>
+                                    <li><a href="#">마몽드(MAMONDE)</a></li>
+                                    <li><a href="#">한율(HANYUL)</a></li>
+                                    <li><a href="#">헤라(HERA)</a></li>
+                                    <li><a href="#">려(Ryo)</a></li>
+                                </ul>
+                                <p>NEW BRAND</p>
+                                <ul>
+                                    <li><a href="#">듀이트리(DEWYTREE)</a></li>
+                                    <li><a href="#">콤리프(Commleaf)</a></li>
+                                    <li><a href="#">파머시(FARMACY)</a></li>
+                                    <li><a href="#">자이모겐(ZYMOGEN)</a></li>
+                                    <li><a href="#">셀라피(Cellapy)</a></li>
+                                    <li><a href="#">메이크프렘(makep:rem)</a></li>
+                                    <li><a href="#">렛미스킨(LET ME SKIN)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main_nav"><a href="#" class="nav_title">뷰티팁</a></li>
+                        <li class="main_nav"><a href="#" class="nav_title">리뷰</a></li>
+                        <li class="main_nav"><a href="#" class="nav_title">이벤트</a></li>
+                    </ul>
+                </nav>
+                <div class="hb_right">
+                    <a href="#">마일리지샵</a>
+                    <a href="#">뷰티서비스 예약</a>
+                    <a href="#">아리따움 마켓</a>
+                </div>
+            </div>
+            <!--e:h_btm-->
+        </header>
+    </div>
+    <!--e:h_wrap-->
+    <!--section1-->
+     <ul class="category">
+                <li>
+                    <a href="#">스킨케어</a>
+                    <div class="sub_wrap sub_wrap1">
+                        <ul class="sub">
+                            <li><em>스킨케어</em></li>
+                            <li><a href="#">기초</a></li>
+                            <li><a href="#">스팟케어</a></li>
+                            <li><a href="#">클렌징</a></li>
+                            <li><a href="#">마스크팩</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">메이크업</a>
+                    <div class="sub_wrap sub_wrap2">
+                        <ul class="sub">
+                            <li><em>메이크업</em></li>
+                            <li><a href="#">베이스 메이크업</a></li>
+                            <li><a href="#">립 메이크업</a></li>
+                            <li><a href="#">아이 메이크업</a></li>
+                            <li><a href="#">치크 메이크업</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">소품</a>
+                    <div class="sub_wrap  sub_wrap3">
+                        <ul class="sub">
+                            <li><em>소품</em></li>
+                            <li><a href="#">페이스 소품</a></li>
+                            <li><a href="#">아이 소품</a></li>
+                            <li><a href="#">바디/헤어 소품</a></li>
+                            <li><a href="#">메이크업 브러시</a></li>
+                            <li><a href="#">파우치/공용기</a></li>
+                            <li><a href="#">리빙 소품</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">네일·향수</a>
+                    <div class="sub_wrap sub_wrap4">
+                        <ul class="sub">
+                            <li><em>네일·향수</em></li>
+                            <li><a href="#">네일</a></li>
+                            <li><a href="#">향수/디퓨저</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">바디·헤어</a>
+                    <div class="sub_wrap sub_wrap5">
+                        <ul class="sub">
+                            <li><em>바디·헤어</em></li>
+                            <li><a href="#">바디</a></li>
+                            <li><a href="#">헤어</a></li>
+                            <li><a href="#">구강관리</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뷰티푸드</a>
+                    <div class="sub_wrap sub_wrap6">
+                        <ul class="sub">
+                            <li><em>뷰티푸드</em></li>
+                            <li><a href="#">슬리밍</a></li>
+                            <li><a href="#">이너뷰티</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">옴므·키즈</a>
+                    <div class="sub_wrap sub_wrap7">
+                        <ul class="sub">
+                            <li><em>옴므·키즈</em></li>
+                            <li><a href="#">남성 스킨커어</a></li>
+                            <li><a href="#">남성 메이크업</a></li>
+                            <li><a href="#">남성 바디/헤어</a></li>
+                            <li><a href="#">키즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">뷰티서비스·기프트카드</a>
+                    <div class="sub_wrap sub_wrap8">
+                        <ul class="sub">
+                            <li><em>뷰티서비스·기프트카드</em></li>
+                            <li><a href="#">스팟케어</a></li>
+                            <li><a href="#">클렌징</a></li>
+                            <li><a href="#">마스크팩</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    <section>
+        <aside>
+           <h2>이벤트</h2>
+            <a href="#">진행중인 이벤트</a>
+            <a href="#">뷰티샘플링</a>
+            <a href="#">뷰티체험단</a>
+        </aside>
+        <div class="promotion">
+           <h2>이벤트</h2>
+           <div class="contents">
+           <p>아리따움 &gt; 이벤트 &gt; <span>진행중인 이벤트</span></p>
+            <img src="images/promotion.jpg" alt="헤어&바디 기획전/해피바스 어떤상품이든 구매시 전원 마이크로 미셀라 소프트 휩 클렌징폼 3종 연결파우치 증정/해피바스 2만원 이상 구매시 마이크로 미셀라 소프트 휩 클렌징폼 3종 연결파우치, 시암 아로마 스크럽 50ml, 핸드크림 50ml, 마이크로 미셀라 소프트 휩 클렌징폼 30g 증정">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <footer>
+        <div class="f_left">
+            <div class="top">
+                <a href="#">사이트 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">공지사항 &amp; 고객센터</a>
+            </div>
+            <p>(주)아모레 퍼시픽 대표이사 : 안세홍 <br>서울특별시 용산구 한강대로 100 (한강로 2가) 사업자 등록번호 : 106-86-43373
+                <a href="#" class="f_check">사업자 정보확인</a><br>
+                통신판매업신고번호 : 2017-서울용산-1308호 / 건강기능식품판매업 영업신고증 제8호 <br>
+                <span>(주)이니시스 구매안전서비스</span> 고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다.
+                <a href="#" class="f_check">서비스 가입사실 확인</a><br>
+                아리따움의 모든 고객은 월 100만원(라네즈 글로벌 상품 월 50만원)/연 300만원 내에서 할인 혜택을 받을 수 있습니다. (온/오프라인 합산) <br>AMOREPACIFIC CORPORATION. ALL RIGHT RESERVED.
+            </p>
+        </div>
+        <!--e:f_left-->
+        <div class="f_center">
+            <p class="custom">고객센터 이용안내</p>
+            <span>온라인 문의</span>
+            <p class="phone">080-555-6006</p>
+            <span>제품 및 매장 문의</span>
+            <p class="phone">080-023-5454</p>
+            <span>운영시간 : AM9 ~ PM6 (주말 및 공휴일 휴무)</span>
+            <span>점심시간 : PM1 ~ PM2 </span>
+        </div>
+        <!--e:f_center-->
+        <div class="f_right">
+            <a href="#" class="sns">페이스북</a>
+            <a href="#" class="sns">인스타그램</a>
+            <a href="#" class="sns">모디네일</a>
+            <a href="#" class="sns">카카오톡채널-아리따움</a>
+        </div>
+        <!--e:f_right-->
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--끝-->

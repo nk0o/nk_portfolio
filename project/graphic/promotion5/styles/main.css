@@ -1,0 +1,5 @@
+.back {width:1000px; margin: 0 auto; position:relative;}
+.back > img {}
+.back p {position:absolute; left: 90px; bottom:280px;}
+.back p a{}
+.back p a img{}

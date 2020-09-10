@@ -1,0 +1,43 @@
+.promotion {
+    width:1000px;
+    margin: 0 auto;  
+}
+
+.insta{
+    width:540px;
+    margin: 0 auto;
+}
+.insta a {
+    display:block; 
+    float: left;
+    height: 108px;
+}
+.insta a img{}
+
+.icon {
+    width:27px; 
+    position:fixed; 
+    top:40%; left:80%; 
+}
+.icon a {
+    display: inline-block; 
+    margin-bottom: 13px; 
+}
+.icon a img {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

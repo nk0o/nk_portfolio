@@ -1,0 +1,18 @@
+* {box-sizing: border-box;}
+body, html, a, p, div, form, fieldset, legend, select, button, h1, h2, h3, h4, h5, h6, span, em, header, section, footer, article, nav, img, video, input, option, ol, ul, li {
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0;
+    list-style: none;
+    text-decoration: none;
+    padding: 0; margin: 0;
+    letter-spacing: -1px;
+    border-collapse: collapse;
+    border: 0;
+   /* font-family: 'Noto Sans KR', sans-serif;*/
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#333;
+}
+legend {display: none;}
+button {cursor: pointer;}

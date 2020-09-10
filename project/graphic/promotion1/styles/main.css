@@ -1,0 +1,17 @@
+body {}
+.promotion:nth-child(1) {height: 1087px;}
+.promotion {
+    background: aqua;
+    width:1000px;
+    margin: 0 auto;
+    position:relative;
+}
+.promotion p {    
+}
+.promotion p img {}
+.promotion a {
+    position:absolute;
+    right:0; bottom:0;
+}
+.promotion a img {}
+.promotion > img {}
