@@ -1,0 +1,12 @@
+body{background-position: top center;}
+.view {
+    position:fixed; right: 50px; top:50px;
+    display:block; width:100px; height: 100px;
+    line-height: 100px; text-align: center;
+    background-color: #555; color: #fff;
+    border-radius: 50%; text-decoration: none;
+    font-size: 1.25em;
+}
+.view:hover {background-color: #ccc;}
+p {font-size: 0.987em;letter-spacing: -1.7px; position: absolute; top: 30px; left: 30px; font-weight: 700;}
+img {width: 1900px; margin: 0 auto;}
